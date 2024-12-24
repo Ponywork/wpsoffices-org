@@ -331,6 +331,18 @@
         </div>
     </div>
 </main>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleRead = document.getElementById('toggleRead');
+        const readList = document.getElementById('readList');
+        const toggleIcon = document.querySelector('.toggle-icon');
+
+        toggleRead.addEventListener('click', function() {
+            readList.classList.toggle('hidden');
+            toggleIcon.classList.toggle('rotated');
+        });
+    });
+</script>
 
 
     <footer class="flex items-center justify-center mt-10 border-t border-gray-300 py-5 px-4 md:px-0 text-gray-700 text-base">
